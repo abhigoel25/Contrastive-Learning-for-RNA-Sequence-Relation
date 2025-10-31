@@ -1,0 +1,42 @@
+# # Experiment A (your new model)
+# exp_a: /gpfs/commons/home/atalukder/Contrastive_Learning/files/results/exprmnt_2025_08_26__12_30_34/weights/checkpoints
+# label_a: NewModel
+
+# # Experiment B (optional: SOTA implementation)
+# exp_b: /gpfs/commons/home/atalukder/Contrastive_Learning/files/results/exprmnt_2025_08_26__12_30_34/weights/checkpoints
+# label_b: SOTA-Impl
+
+# Experiment A (your new model)
+exp_a: exprmnt_2025_09_23__12_16_31
+label_a: MTspliceIntronExon10aug
+
+# Experiment B (optional: SOTA implementation)
+# exp_b: exprmnt_2025_08_26__12_30_34
+# label_b: SOTA-Impl
+
+tissue: Retina - Eye
+running_platform: EMPRAI # NYGC
+
+
+# Baseline performance reported in the paper
+paper: 0.22
+
+# Run discovery
+runs_glob: "run_*"
+spearman_file: "tsplice_spearman_by_tissue.tsv"
+
+# Aggregation
+# metric_col: "spearman_psi"
+metric_col: "spearman_delta"
+count_col: "n_valid_psi"
+weighted: true
+
+# Output
+out_dir: analysis_out
+no_plots: false
+
+# Stats
+alpha: 0.05
+n_boot: 10000
+n_perm: 10000
+seed: 42

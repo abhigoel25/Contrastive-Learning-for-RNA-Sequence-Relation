@@ -1,0 +1,15 @@
+name: embedding_viz
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - torchaudio
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - pip
+  - pip:
+      - enformer-pytorch
