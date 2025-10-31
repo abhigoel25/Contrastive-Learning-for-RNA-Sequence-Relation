@@ -1,0 +1,10 @@
+{
+    "bp_per_token": 1,
+    "embedding_dim": 768,
+    "seq_len": 201,
+    "vocab_size": 11,
+    "rcps": false,
+    "maxpooling": true,
+    "size": 50,
+    "name_or_path": "ResNet1D"
+}

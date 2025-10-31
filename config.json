@@ -1,0 +1,105 @@
+{
+    "wandb": {
+        "api_key": "6c6c3f0e63c48c1d9b78f03948c5eb5a4f828a66",
+        "dir": "/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/files/wandb"
+    },
+    "logger": {
+        "_target_": "lightning.pytorch.loggers.WandbLogger",
+        "name": "EMPRAICL_alldata_resnet3p_weightedsupcon10_2025_10_15__12_47_49",
+        "id": "introns_cl-EMPRAICL_alldata_resnet3p_weightedsupcon10_2025_10_15__12_47_49",
+        "project": "INTRONS_CL",
+        "group": "introns_cl",
+        "save_dir": "/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/files/wandb",
+        "log_model": true,
+        "notes": "all data 3p supcon resnet ten aug weighted",
+        "settings": {
+            "init_timeout": 600
+        }
+    },
+    "embedder": {
+        "bp_per_token": 1,
+        "embedding_dim": 768,
+        "seq_len": 201,
+        "vocab_size": 11,
+        "rcps": false,
+        "maxpooling": true,
+        "size": 50,
+        "_name_": "ResNet1D",
+        "name_or_path": "ResNet1D"
+    },
+    "dataset": {
+        "seq_len": 199,
+        "train_data_file": "/mnt/home/at3836/Contrastive_Learning/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/train_3primeIntron_filtered_min30views.pkl",
+        "val_data_file": "/mnt/home/at3836/Contrastive_Learning/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/val_3primeIntron_filtered.pkl",
+        "test_data_file": "/mnt/home/at3836/Contrastive_Learning/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/test_3primeIntron_filtered.pkl",
+        "batch_size_per_device": 2048,
+        "num_workers": 8,
+        "train_ratio": 0.8,
+        "val_ratio": 0.1,
+        "test_ratio": null,
+        "cache_dir": "../data",
+        "n_augmentations": 10,
+        "fixed_species": false
+    },
+    "task": {
+        "_name_": "introns_cl",
+        "metrics": [
+            "accuracy"
+        ],
+        "val_check_interval": 1.0,
+        "global_batch_size": 2048
+    },
+    "trainer": {
+        "_target_": "lightning.pytorch.Trainer",
+        "max_epochs": 100,
+        "callbacks": null,
+        "devices": 1,
+        "log_every_n_steps": 1,
+        "limit_train_batches": 1.0,
+        "limit_val_batches": 1.0,
+        "val_check_interval": 0.5,
+        "gradient_clip_val": 1.0,
+        "precision": "16-mixed",
+        "num_sanity_val_steps": 0,
+        "num_nodes": 1,
+        "accumulate_grad_batches": 1
+    },
+    "callbacks": {
+        "model_checkpoint": {
+            "_target_": "lightning.pytorch.callbacks.ModelCheckpoint",
+            "dirpath": "/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints",
+            "filename": "introns_cl/ResNet1D/199/best-checkpoint",
+            "save_top_k": 1,
+            "save_last": true,
+            "verbose": true,
+            "monitor": "val_loss",
+            "mode": "min"
+        },
+        "learning_rate_monitor": {
+            "_target_": "lightning.pytorch.callbacks.LearningRateMonitor",
+            "logging_interval": "step"
+        }
+    },
+    "tokenizer": {
+        "_target_": "src.tokenizers.custom.CustomTokenizer",
+        "seq_len": 400,
+        "model_max_length": 400,
+        "padding": "longest"
+    },
+    "loss": {
+        "_target_": "src.loss.weighted_supcon.weightedSupConLoss",
+        "temperature": 0.5,
+        "correlation_dir": "/mnt/home/at3836/Contrastive_Learning/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data"
+    },
+    "model": {
+        "name_or_path": "simclr",
+        "hidden_dim": 512,
+        "projection_dim": 128
+    },
+    "optimizer": {
+        "_target_": "torch.optim.SGD",
+        "lr": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0
+    }
+}
