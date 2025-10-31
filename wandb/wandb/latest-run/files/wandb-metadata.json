@@ -1,0 +1,97 @@
+{
+  "os": "Linux-5.14.0-427.40.1.el9_4.x86_64-x86_64-with-glibc2.34",
+  "python": "3.10.15",
+  "startedAt": "2025-10-15T16:49:04.474842Z",
+  "args": [
+    "task=introns_cl",
+    "task.val_check_interval=1.0",
+    "task.global_batch_size=2048",
+    "trainer.max_epochs=100",
+    "tokenizer=custom_tokenizer",
+    "embedder.seq_len=201",
+    "embedder=resnet",
+    "loss=weighted_supcon",
+    "embedder.maxpooling=True",
+    "optimizer=sgd",
+    "dataset.n_augmentations=10",
+    "dataset.fixed_species=False",
+    "dataset.train_data_file=/mnt/home/at3836/Contrastive_Learning/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/train_3primeIntron_filtered_min30views.pkl",
+    "dataset.val_data_file=/mnt/home/at3836/Contrastive_Learning/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/val_3primeIntron_filtered.pkl",
+    "dataset.test_data_file=/mnt/home/at3836/Contrastive_Learning/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/test_3primeIntron_filtered.pkl",
+    "++wandb.dir='/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/files/wandb'",
+    "++logger.name='EMPRAICL_alldata_resnet3p_weightedsupcon10_2025_10_15__12_47_49'",
+    "++callbacks.model_checkpoint.dirpath='/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints'",
+    "++hydra.run.dir=/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/files/hydra",
+    "++logger.notes=all data 3p supcon resnet ten aug weighted"
+  ],
+  "program": "-m scripts.cl_training",
+  "email": "at3836@columbia.edu",
+  "root": "/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/files/wandb",
+  "host": "alphagpu06",
+  "username": "at3836",
+  "executable": "/mnt/home/at3836/miniconda3/envs/cl_splicing_regulation3/bin/python",
+  "cpu_count": 96,
+  "cpu_count_logical": 96,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "942446399488",
+      "used": "51777974272"
+    }
+  },
+  "memory": {
+    "total": "2164195082240"
+  },
+  "cpu": {
+    "count": 96,
+    "countLogical": 96
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA H100 80GB HBM3",
+      "memoryTotal": "85520809984",
+      "cudaCores": 16896,
+      "architecture": "Hopper"
+    }
+  ],
+  "slurm": {
+    "cluster_name": "slurm",
+    "conf": "/cm/shared/apps/slurm/var/etc/slurm/slurm.conf",
+    "cpus_on_node": "8",
+    "cpus_per_task": "8",
+    "gpus_on_node": "1",
+    "gtids": "0",
+    "job_account": "columbia",
+    "job_cpus_per_node": "8",
+    "job_end_time": "1760574775",
+    "job_gid": "1294",
+    "job_gpus": "4",
+    "job_id": "202600",
+    "job_name": "CL_alldata_resnet3p_weightedsupcon10_alldata_resnet3p_weightedsupcon10_29669662__2025_10_15__12_47_49",
+    "job_nodelist": "alphagpu06",
+    "job_num_nodes": "1",
+    "job_partition": "columbia",
+    "job_qos": "normal",
+    "job_start_time": "1760546875",
+    "job_uid": "1293",
+    "job_user": "at3836",
+    "jobid": "202600",
+    "localid": "0",
+    "mem_per_node": "102400",
+    "nnodes": "1",
+    "node_aliases": "(null)",
+    "nodeid": "0",
+    "nodelist": "alphagpu06",
+    "prio_process": "0",
+    "procid": "0",
+    "submit_dir": "/mnt/home/at3836/Contrastive_Learning/code",
+    "submit_host": "alphagpu05",
+    "task_pid": "1424641",
+    "tasks_per_node": "1",
+    "topology_addr": "alphagpu06",
+    "topology_addr_pattern": "node",
+    "working_cluster": "slurm:alpha-mgr:6817:9984:109"
+  },
+  "cudaVersion": "12.7"
+}

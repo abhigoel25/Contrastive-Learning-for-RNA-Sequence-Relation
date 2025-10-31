@@ -1,0 +1,7 @@
+{"time":"2025-10-15T12:49:03.630033007-04:00","level":"INFO","msg":"started logging, with flags","port-filename":"/tmp/tmpjxorl2db/port-1424801.txt","pid":1424801,"debug":false,"disable-analytics":false}
+{"time":"2025-10-15T12:49:03.630080756-04:00","level":"INFO","msg":"FeatureState","shutdownOnParentExitEnabled":false}
+{"time":"2025-10-15T12:49:03.631142759-04:00","level":"INFO","msg":"server is running","addr":{"IP":"127.0.0.1","Port":39971,"Zone":""}}
+{"time":"2025-10-15T12:49:03.631263787-04:00","level":"INFO","msg":"Will exit if parent process dies.","ppid":1424801}
+{"time":"2025-10-15T12:49:03.809684511-04:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"127.0.0.1:35974"}
+{"time":"2025-10-15T12:49:04.47649895-04:00","level":"INFO","msg":"handleInformInit: received","streamId":"sipnifg2","id":"127.0.0.1:35974"}
+{"time":"2025-10-15T12:49:04.616374295-04:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"sipnifg2","id":"127.0.0.1:35974"}

@@ -1,0 +1,333 @@
+Setting up training for introns_cl
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name    | Type               | Params | Mode
+-------------------------------------------------------
+0 | model   | SimCLRModule       | 17.4 M | train
+1 | loss_fn | weightedSupConLoss | 0      | train
+-------------------------------------------------------
+17.4 M    Trainable params
+0         Non-trainable params
+17.4 M    Total params
+69.687    Total estimated model params size (MB)
+164       Modules in train mode
+0         Modules in eval mode
+Epoch 0: 100%|██████████| 348/348 [05:52<00:00,  0.99it/s, v_num=ifg2, train_loss_step=44.60, val_loss_step=32.10, val_loss_epoch=36.70, train_loss_epoch=46.10]
+Epoch 0 took 352.14 seconds.                                            
+Epoch 0, global step 174: 'val_loss' reached 37.24974 (best 37.24974), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 0, global step 348: 'val_loss' reached 36.70584 (best 36.70584), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 1: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=42.10, val_loss_step=29.60, val_loss_epoch=34.20, train_loss_epoch=44.10, epoch_time=352.0]
+Epoch 1 took 349.48 seconds.                                            
+Epoch 1, global step 522: 'val_loss' reached 35.43237 (best 35.43237), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 1, global step 696: 'val_loss' reached 34.18317 (best 34.18317), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 2: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.20, val_loss_step=27.30, val_loss_epoch=31.80, train_loss_epoch=41.20, epoch_time=349.0]
+Epoch 2 took 348.00 seconds.                                            
+Epoch 2, global step 870: 'val_loss' reached 32.19703 (best 32.19703), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 2, global step 1044: 'val_loss' reached 31.80834 (best 31.80834), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 3: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=41.80, val_loss_step=27.30, val_loss_epoch=31.70, train_loss_epoch=40.30, epoch_time=348.0]
+Epoch 3 took 348.07 seconds.                                            
+Epoch 3, global step 1218: 'val_loss' reached 31.70361 (best 31.70361), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 3, global step 1392: 'val_loss' reached 31.65399 (best 31.65399), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 4: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=41.00, val_loss_step=27.20, val_loss_epoch=31.60, train_loss_epoch=40.20, epoch_time=348.0]
+Epoch 4 took 347.37 seconds.                                            
+Epoch 4, global step 1566: 'val_loss' reached 31.62233 (best 31.62233), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 4, global step 1740: 'val_loss' reached 31.59894 (best 31.59894), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 5: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.60, val_loss_step=26.80, val_loss_epoch=31.60, train_loss_epoch=40.20, epoch_time=347.0]
+Epoch 5 took 347.16 seconds.                                            
+Epoch 5, global step 1914: 'val_loss' reached 31.55876 (best 31.55876), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 5, global step 2088: 'val_loss' was not in top 1
+Epoch 6: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.40, val_loss_step=27.50, val_loss_epoch=31.60, train_loss_epoch=40.10, epoch_time=347.0]
+Epoch 6 took 347.02 seconds.                                            
+Epoch 6, global step 2262: 'val_loss' reached 31.54964 (best 31.54964), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 6, global step 2436: 'val_loss' was not in top 1
+Epoch 7: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=37.80, val_loss_step=27.10, val_loss_epoch=31.50, train_loss_epoch=40.10, epoch_time=347.0]
+Epoch 7 took 349.31 seconds.                                            
+Epoch 7, global step 2610: 'val_loss' reached 31.52321 (best 31.52321), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 7, global step 2784: 'val_loss' reached 31.50816 (best 31.50816), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 8: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.40, val_loss_step=27.00, val_loss_epoch=31.50, train_loss_epoch=40.10, epoch_time=349.0]
+Epoch 8 took 348.49 seconds.                                            
+Epoch 8, global step 2958: 'val_loss' was not in top 1
+Epoch 8, global step 3132: 'val_loss' reached 31.49712 (best 31.49712), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 9: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.10, val_loss_step=27.00, val_loss_epoch=31.50, train_loss_epoch=40.10, epoch_time=348.0]
+Epoch 9 took 349.55 seconds.                                            
+Epoch 9, global step 3306: 'val_loss' reached 31.48307 (best 31.48307), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 9, global step 3480: 'val_loss' was not in top 1
+Epoch 10: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.60, val_loss_step=27.00, val_loss_epoch=31.50, train_loss_epoch=40.10, epoch_time=350.0]
+Epoch 10 took 349.17 seconds.                                           
+Epoch 10, global step 3654: 'val_loss' was not in top 1
+Epoch 10, global step 3828: 'val_loss' reached 31.46211 (best 31.46211), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 11: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.50, val_loss_step=26.80, val_loss_epoch=31.40, train_loss_epoch=40.00, epoch_time=349.0]
+Epoch 11 took 348.89 seconds.                                           
+Epoch 11, global step 4002: 'val_loss' was not in top 1
+Epoch 11, global step 4176: 'val_loss' reached 31.43614 (best 31.43614), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 12: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=37.60, val_loss_step=26.90, val_loss_epoch=31.40, train_loss_epoch=40.00, epoch_time=349.0]
+Epoch 12 took 350.43 seconds.                                           
+Epoch 12, global step 4350: 'val_loss' was not in top 1
+Epoch 12, global step 4524: 'val_loss' reached 31.43484 (best 31.43484), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 13: 100%|██████████| 348/348 [05:46<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.60, val_loss_step=26.90, val_loss_epoch=31.40, train_loss_epoch=40.00, epoch_time=350.0]
+Epoch 13 took 346.37 seconds.                                           
+Epoch 13, global step 4698: 'val_loss' reached 31.43257 (best 31.43257), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 13, global step 4872: 'val_loss' was not in top 1
+Epoch 14: 100%|██████████| 348/348 [05:46<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.10, val_loss_step=27.50, val_loss_epoch=31.40, train_loss_epoch=40.00, epoch_time=346.0]
+Epoch 14 took 346.92 seconds.                                           
+Epoch 14, global step 5046: 'val_loss' reached 31.42187 (best 31.42187), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 14, global step 5220: 'val_loss' was not in top 1
+Epoch 15: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.30, val_loss_step=27.00, val_loss_epoch=31.40, train_loss_epoch=40.00, epoch_time=347.0]
+Epoch 15 took 348.52 seconds.                                           
+Epoch 15, global step 5394: 'val_loss' reached 31.41447 (best 31.41447), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 15, global step 5568: 'val_loss' reached 31.38719 (best 31.38719), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 16: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.60, val_loss_step=26.60, val_loss_epoch=31.40, train_loss_epoch=40.00, epoch_time=349.0]
+Epoch 16 took 347.43 seconds.                                           
+Epoch 16, global step 5742: 'val_loss' was not in top 1
+Epoch 16, global step 5916: 'val_loss' was not in top 1
+Epoch 17: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.20, val_loss_step=26.90, val_loss_epoch=31.40, train_loss_epoch=40.00, epoch_time=347.0]
+Epoch 17 took 349.08 seconds.                                           
+Epoch 17, global step 6090: 'val_loss' reached 31.35099 (best 31.35099), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 17, global step 6264: 'val_loss' was not in top 1
+Epoch 18: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.70, val_loss_step=27.10, val_loss_epoch=31.40, train_loss_epoch=39.90, epoch_time=349.0]
+Epoch 18 took 349.37 seconds.                                           
+Epoch 18, global step 6438: 'val_loss' was not in top 1
+Epoch 18, global step 6612: 'val_loss' was not in top 1
+Epoch 19: 100%|██████████| 348/348 [05:46<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.90, val_loss_step=27.10, val_loss_epoch=31.40, train_loss_epoch=39.90, epoch_time=349.0]
+Epoch 19 took 346.85 seconds.                                           
+Epoch 19, global step 6786: 'val_loss' was not in top 1
+Epoch 19, global step 6960: 'val_loss' was not in top 1
+Epoch 20: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.60, val_loss_step=26.30, val_loss_epoch=31.30, train_loss_epoch=39.90, epoch_time=347.0]
+Epoch 20 took 348.32 seconds.                                           
+Epoch 20, global step 7134: 'val_loss' reached 31.34861 (best 31.34861), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 20, global step 7308: 'val_loss' reached 31.33603 (best 31.33603), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 21: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.30, val_loss_step=26.90, val_loss_epoch=31.30, train_loss_epoch=39.90, epoch_time=348.0]
+Epoch 21 took 349.19 seconds.                                           
+Epoch 21, global step 7482: 'val_loss' reached 31.32664 (best 31.32664), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 21, global step 7656: 'val_loss' was not in top 1
+Epoch 22: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.30, val_loss_step=27.00, val_loss_epoch=31.30, train_loss_epoch=39.90, epoch_time=349.0]
+Epoch 22 took 347.79 seconds.                                           
+Epoch 22, global step 7830: 'val_loss' was not in top 1
+Epoch 22, global step 8004: 'val_loss' was not in top 1
+Epoch 23: 100%|██████████| 348/348 [05:49<00:00,  0.99it/s, v_num=ifg2, train_loss_step=38.60, val_loss_step=26.80, val_loss_epoch=31.30, train_loss_epoch=39.90, epoch_time=348.0]
+Epoch 23 took 349.86 seconds.                                           
+Epoch 23, global step 8178: 'val_loss' reached 31.29958 (best 31.29958), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 23, global step 8352: 'val_loss' was not in top 1
+Epoch 24: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.50, val_loss_step=26.70, val_loss_epoch=31.30, train_loss_epoch=39.90, epoch_time=350.0]
+Epoch 24 took 349.39 seconds.                                           
+Epoch 24, global step 8526: 'val_loss' reached 31.29063 (best 31.29063), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 24, global step 8700: 'val_loss' was not in top 1
+Epoch 25: 100%|██████████| 348/348 [05:46<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.00, val_loss_step=26.80, val_loss_epoch=31.30, train_loss_epoch=39.90, epoch_time=349.0]
+Epoch 25 took 346.91 seconds.                                           
+Epoch 25, global step 8874: 'val_loss' was not in top 1
+Epoch 25, global step 9048: 'val_loss' was not in top 1
+Epoch 26: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=39.70, val_loss_step=26.80, val_loss_epoch=31.30, train_loss_epoch=39.80, epoch_time=347.0]
+Epoch 26 took 350.55 seconds.                                           
+Epoch 26, global step 9222: 'val_loss' reached 31.27764 (best 31.27764), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 26, global step 9396: 'val_loss' was not in top 1
+Epoch 27: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.40, val_loss_step=26.70, val_loss_epoch=31.30, train_loss_epoch=39.80, epoch_time=351.0]
+Epoch 27 took 349.67 seconds.                                           
+Epoch 27, global step 9570: 'val_loss' reached 31.26773 (best 31.26773), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 27, global step 9744: 'val_loss' reached 31.25199 (best 31.25199), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 28: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.60, val_loss_step=26.90, val_loss_epoch=31.20, train_loss_epoch=39.80, epoch_time=350.0]
+Epoch 28 took 348.85 seconds.                                           
+Epoch 28, global step 9918: 'val_loss' was not in top 1
+Epoch 28, global step 10092: 'val_loss' reached 31.24327 (best 31.24327), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 29: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.70, val_loss_step=26.70, val_loss_epoch=31.20, train_loss_epoch=39.80, epoch_time=349.0]
+Epoch 29 took 347.90 seconds.                                           
+Epoch 29, global step 10266: 'val_loss' was not in top 1
+Epoch 29, global step 10440: 'val_loss' reached 31.23969 (best 31.23969), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 30: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=41.50, val_loss_step=26.60, val_loss_epoch=31.20, train_loss_epoch=39.80, epoch_time=348.0]
+Epoch 30 took 348.20 seconds.                                           
+Epoch 30, global step 10614: 'val_loss' was not in top 1
+Epoch 30, global step 10788: 'val_loss' reached 31.23185 (best 31.23185), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 31: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.50, val_loss_step=26.80, val_loss_epoch=31.20, train_loss_epoch=39.80, epoch_time=348.0]
+Epoch 31 took 348.52 seconds.                                           
+Epoch 31, global step 10962: 'val_loss' reached 31.23018 (best 31.23018), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 31, global step 11136: 'val_loss' reached 31.20807 (best 31.20807), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 32: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=41.00, val_loss_step=26.60, val_loss_epoch=31.20, train_loss_epoch=39.80, epoch_time=349.0]
+Epoch 32 took 348.73 seconds.                                           
+Epoch 32, global step 11310: 'val_loss' reached 31.19927 (best 31.19927), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 32, global step 11484: 'val_loss' was not in top 1
+Epoch 33: 100%|██████████| 348/348 [05:51<00:00,  0.99it/s, v_num=ifg2, train_loss_step=40.30, val_loss_step=26.90, val_loss_epoch=31.20, train_loss_epoch=39.70, epoch_time=349.0]
+Epoch 33 took 351.08 seconds.                                           
+Epoch 33, global step 11658: 'val_loss' was not in top 1
+Epoch 33, global step 11832: 'val_loss' reached 31.19413 (best 31.19413), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 34: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.70, val_loss_step=27.20, val_loss_epoch=31.20, train_loss_epoch=39.70, epoch_time=351.0]
+Epoch 34 took 348.49 seconds.                                           
+Epoch 34, global step 12006: 'val_loss' was not in top 1
+Epoch 34, global step 12180: 'val_loss' reached 31.16269 (best 31.16269), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 35: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=41.00, val_loss_step=26.40, val_loss_epoch=31.20, train_loss_epoch=39.70, epoch_time=348.0]
+Epoch 35 took 348.18 seconds.                                           
+Epoch 35, global step 12354: 'val_loss' was not in top 1
+Epoch 35, global step 12528: 'val_loss' was not in top 1
+Epoch 36: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.00, val_loss_step=26.60, val_loss_epoch=31.20, train_loss_epoch=39.70, epoch_time=348.0]
+Epoch 36 took 349.67 seconds.                                           
+Epoch 36, global step 12702: 'val_loss' was not in top 1
+Epoch 36, global step 12876: 'val_loss' was not in top 1
+Epoch 37: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.50, val_loss_step=26.70, val_loss_epoch=31.20, train_loss_epoch=39.70, epoch_time=350.0]
+Epoch 37 took 348.53 seconds.                                           
+Epoch 37, global step 13050: 'val_loss' was not in top 1
+Epoch 37, global step 13224: 'val_loss' was not in top 1
+Epoch 38: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.90, val_loss_step=26.60, val_loss_epoch=31.10, train_loss_epoch=39.70, epoch_time=349.0]
+Epoch 38 took 347.32 seconds.                                           
+Epoch 38, global step 13398: 'val_loss' reached 31.15365 (best 31.15365), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 38, global step 13572: 'val_loss' reached 31.14520 (best 31.14520), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 39: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.60, val_loss_step=26.60, val_loss_epoch=31.10, train_loss_epoch=39.70, epoch_time=347.0]
+Epoch 39 took 347.49 seconds.                                           
+Epoch 39, global step 13746: 'val_loss' reached 31.13789 (best 31.13789), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 39, global step 13920: 'val_loss' reached 31.12811 (best 31.12811), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 40: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.90, val_loss_step=26.30, val_loss_epoch=31.10, train_loss_epoch=39.60, epoch_time=347.0]
+Epoch 40 took 349.04 seconds.                                           
+Epoch 40, global step 14094: 'val_loss' was not in top 1
+Epoch 40, global step 14268: 'val_loss' reached 31.10759 (best 31.10759), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 41: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.00, val_loss_step=26.80, val_loss_epoch=31.10, train_loss_epoch=39.60, epoch_time=349.0]
+Epoch 41 took 347.11 seconds.                                           
+Epoch 41, global step 14442: 'val_loss' was not in top 1
+Epoch 41, global step 14616: 'val_loss' reached 31.09570 (best 31.09570), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 42: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.90, val_loss_step=26.60, val_loss_epoch=31.10, train_loss_epoch=39.60, epoch_time=347.0]
+Epoch 42 took 348.35 seconds.                                           
+Epoch 42, global step 14790: 'val_loss' reached 31.08674 (best 31.08674), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 42, global step 14964: 'val_loss' was not in top 1
+Epoch 43: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.50, val_loss_step=26.50, val_loss_epoch=31.10, train_loss_epoch=39.60, epoch_time=348.0]
+Epoch 43 took 347.59 seconds.                                           
+Epoch 43, global step 15138: 'val_loss' was not in top 1
+Epoch 43, global step 15312: 'val_loss' was not in top 1
+Epoch 44: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.30, val_loss_step=26.40, val_loss_epoch=31.10, train_loss_epoch=39.60, epoch_time=348.0]
+Epoch 44 took 347.34 seconds.                                           
+Epoch 44, global step 15486: 'val_loss' reached 31.08526 (best 31.08526), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 44, global step 15660: 'val_loss' was not in top 1
+Epoch 45: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=39.50, val_loss_step=26.40, val_loss_epoch=31.10, train_loss_epoch=39.60, epoch_time=347.0]
+Epoch 45 took 350.24 seconds.                                           
+Epoch 45, global step 15834: 'val_loss' reached 31.07682 (best 31.07682), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 45, global step 16008: 'val_loss' was not in top 1
+Epoch 46: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.00, val_loss_step=26.70, val_loss_epoch=31.10, train_loss_epoch=39.60, epoch_time=350.0]
+Epoch 46 took 348.92 seconds.                                           
+Epoch 46, global step 16182: 'val_loss' reached 31.06701 (best 31.06701), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 46, global step 16356: 'val_loss' reached 31.05706 (best 31.05706), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 47: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.70, val_loss_step=26.30, val_loss_epoch=31.10, train_loss_epoch=39.50, epoch_time=349.0]
+Epoch 47 took 349.39 seconds.                                           
+Epoch 47, global step 16530: 'val_loss' reached 31.04284 (best 31.04284), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 47, global step 16704: 'val_loss' was not in top 1
+Epoch 48: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=40.00, val_loss_step=26.80, val_loss_epoch=31.00, train_loss_epoch=39.50, epoch_time=349.0]
+Epoch 48 took 350.39 seconds.                                           
+Epoch 48, global step 16878: 'val_loss' was not in top 1
+Epoch 48, global step 17052: 'val_loss' was not in top 1
+Epoch 49: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.50, val_loss_step=26.50, val_loss_epoch=31.10, train_loss_epoch=39.50, epoch_time=350.0]
+Epoch 49 took 349.09 seconds.                                           
+Epoch 49, global step 17226: 'val_loss' reached 31.03062 (best 31.03062), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 49, global step 17400: 'val_loss' was not in top 1
+Epoch 50: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.80, val_loss_step=26.60, val_loss_epoch=31.10, train_loss_epoch=39.50, epoch_time=349.0]
+Epoch 50 took 349.66 seconds.                                           
+Epoch 50, global step 17574: 'val_loss' reached 31.02954 (best 31.02954), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 50, global step 17748: 'val_loss' was not in top 1
+Epoch 51: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=41.00, val_loss_step=26.60, val_loss_epoch=31.00, train_loss_epoch=39.50, epoch_time=350.0]
+Epoch 51 took 349.02 seconds.                                           
+Epoch 51, global step 17922: 'val_loss' reached 31.00794 (best 31.00794), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 51, global step 18096: 'val_loss' was not in top 1
+Epoch 52: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=41.40, val_loss_step=26.60, val_loss_epoch=31.00, train_loss_epoch=39.50, epoch_time=349.0]
+Epoch 52 took 350.02 seconds.                                           
+Epoch 52, global step 18270: 'val_loss' reached 31.00246 (best 31.00246), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 52, global step 18444: 'val_loss' reached 30.98727 (best 30.98727), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 53: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=39.10, val_loss_step=26.40, val_loss_epoch=31.00, train_loss_epoch=39.50, epoch_time=350.0]
+Epoch 53 took 350.40 seconds.                                           
+Epoch 53, global step 18618: 'val_loss' reached 30.98193 (best 30.98193), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 53, global step 18792: 'val_loss' was not in top 1
+Epoch 54: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.70, val_loss_step=26.30, val_loss_epoch=31.00, train_loss_epoch=39.40, epoch_time=350.0]
+Epoch 54 took 348.60 seconds.                                           
+Epoch 54, global step 18966: 'val_loss' was not in top 1
+Epoch 54, global step 19140: 'val_loss' reached 30.96432 (best 30.96432), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 55: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.30, val_loss_step=26.40, val_loss_epoch=31.00, train_loss_epoch=39.40, epoch_time=349.0]
+Epoch 55 took 348.45 seconds.                                           
+Epoch 55, global step 19314: 'val_loss' reached 30.96172 (best 30.96172), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 55, global step 19488: 'val_loss' was not in top 1
+Epoch 56: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.40, val_loss_step=26.30, val_loss_epoch=30.90, train_loss_epoch=39.40, epoch_time=348.0]
+Epoch 56 took 349.03 seconds.                                           
+Epoch 56, global step 19662: 'val_loss' was not in top 1
+Epoch 56, global step 19836: 'val_loss' reached 30.93083 (best 30.93083), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 57: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.40, val_loss_step=26.20, val_loss_epoch=31.00, train_loss_epoch=39.40, epoch_time=349.0]
+Epoch 57 took 349.01 seconds.                                           
+Epoch 57, global step 20010: 'val_loss' was not in top 1
+Epoch 57, global step 20184: 'val_loss' was not in top 1
+Epoch 58: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.20, val_loss_step=26.40, val_loss_epoch=30.90, train_loss_epoch=39.40, epoch_time=349.0]
+Epoch 58 took 348.76 seconds.                                           
+Epoch 58, global step 20358: 'val_loss' was not in top 1
+Epoch 58, global step 20532: 'val_loss' reached 30.92956 (best 30.92956), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 59: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=37.50, val_loss_step=26.20, val_loss_epoch=30.90, train_loss_epoch=39.40, epoch_time=349.0]
+Epoch 59 took 350.67 seconds.                                           
+Epoch 59, global step 20706: 'val_loss' was not in top 1
+Epoch 59, global step 20880: 'val_loss' reached 30.91501 (best 30.91501), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 60: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=40.30, val_loss_step=26.30, val_loss_epoch=30.90, train_loss_epoch=39.40, epoch_time=351.0]
+Epoch 60 took 350.53 seconds.                                           
+Epoch 60, global step 21054: 'val_loss' reached 30.91228 (best 30.91228), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 60, global step 21228: 'val_loss' reached 30.90006 (best 30.90006), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 61: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=36.70, val_loss_step=26.40, val_loss_epoch=30.90, train_loss_epoch=39.40, epoch_time=351.0]
+Epoch 61 took 350.02 seconds.                                           
+Epoch 61, global step 21402: 'val_loss' was not in top 1
+Epoch 61, global step 21576: 'val_loss' was not in top 1
+Epoch 62: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=40.00, val_loss_step=25.90, val_loss_epoch=30.90, train_loss_epoch=39.40, epoch_time=350.0]
+Epoch 62 took 350.67 seconds.                                           
+Epoch 62, global step 21750: 'val_loss' reached 30.89233 (best 30.89233), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 62, global step 21924: 'val_loss' was not in top 1
+Epoch 63: 100%|██████████| 348/348 [05:51<00:00,  0.99it/s, v_num=ifg2, train_loss_step=39.10, val_loss_step=26.60, val_loss_epoch=30.90, train_loss_epoch=39.30, epoch_time=351.0]
+Epoch 63 took 351.41 seconds.                                           
+Epoch 63, global step 22098: 'val_loss' reached 30.89182 (best 30.89182), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 63, global step 22272: 'val_loss' was not in top 1
+Epoch 64: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=37.40, val_loss_step=25.80, val_loss_epoch=30.90, train_loss_epoch=39.30, epoch_time=351.0]
+Epoch 64 took 349.28 seconds.                                           
+Epoch 64, global step 22446: 'val_loss' was not in top 1
+Epoch 64, global step 22620: 'val_loss' reached 30.86361 (best 30.86361), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 65: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.10, val_loss_step=26.20, val_loss_epoch=30.90, train_loss_epoch=39.30, epoch_time=349.0]
+Epoch 65 took 349.49 seconds.                                           
+Epoch 65, global step 22794: 'val_loss' reached 30.85115 (best 30.85115), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 65, global step 22968: 'val_loss' was not in top 1
+Epoch 66: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.20, val_loss_step=26.20, val_loss_epoch=30.90, train_loss_epoch=39.30, epoch_time=349.0]
+Epoch 66 took 348.16 seconds.                                           
+Epoch 66, global step 23142: 'val_loss' was not in top 1
+Epoch 66, global step 23316: 'val_loss' was not in top 1
+Epoch 67: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.90, val_loss_step=26.30, val_loss_epoch=30.80, train_loss_epoch=39.30, epoch_time=348.0]
+Epoch 67 took 349.41 seconds.                                           
+Epoch 67, global step 23490: 'val_loss' reached 30.85016 (best 30.85016), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 67, global step 23664: 'val_loss' reached 30.83766 (best 30.83766), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 68: 100%|██████████| 348/348 [05:52<00:00,  0.99it/s, v_num=ifg2, train_loss_step=37.80, val_loss_step=26.20, val_loss_epoch=30.80, train_loss_epoch=39.30, epoch_time=349.0]
+Epoch 68 took 352.29 seconds.                                           
+Epoch 68, global step 23838: 'val_loss' reached 30.81864 (best 30.81864), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 68, global step 24012: 'val_loss' was not in top 1
+Epoch 69: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=38.70, val_loss_step=26.20, val_loss_epoch=30.80, train_loss_epoch=39.30, epoch_time=352.0]
+Epoch 69 took 347.82 seconds.                                           
+Epoch 69, global step 24186: 'val_loss' was not in top 1
+Epoch 69, global step 24360: 'val_loss' was not in top 1
+Epoch 70: 100%|██████████| 348/348 [05:51<00:00,  0.99it/s, v_num=ifg2, train_loss_step=38.80, val_loss_step=26.20, val_loss_epoch=30.80, train_loss_epoch=39.20, epoch_time=348.0]
+Epoch 70 took 351.91 seconds.                                           
+Epoch 70, global step 24534: 'val_loss' was not in top 1
+Epoch 70, global step 24708: 'val_loss' reached 30.81386 (best 30.81386), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 71: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.60, val_loss_step=26.00, val_loss_epoch=30.80, train_loss_epoch=39.20, epoch_time=352.0]
+Epoch 71 took 349.49 seconds.                                           
+Epoch 71, global step 24882: 'val_loss' reached 30.80932 (best 30.80932), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 71, global step 25056: 'val_loss' reached 30.78708 (best 30.78708), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 72: 100%|██████████| 348/348 [05:49<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.30, val_loss_step=26.40, val_loss_epoch=30.80, train_loss_epoch=39.20, epoch_time=349.0]
+Epoch 72 took 349.09 seconds.                                           
+Epoch 72, global step 25230: 'val_loss' was not in top 1
+Epoch 72, global step 25404: 'val_loss' was not in top 1
+Epoch 73: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=37.20, val_loss_step=26.10, val_loss_epoch=30.80, train_loss_epoch=39.20, epoch_time=349.0]
+Epoch 73 took 350.10 seconds.                                           
+Epoch 73, global step 25578: 'val_loss' reached 30.78571 (best 30.78571), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 73, global step 25752: 'val_loss' reached 30.77748 (best 30.77748), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 74: 100%|██████████| 348/348 [05:50<00:00,  0.99it/s, v_num=ifg2, train_loss_step=39.20, val_loss_step=26.00, val_loss_epoch=30.80, train_loss_epoch=39.20, epoch_time=350.0]
+Epoch 74 took 350.75 seconds.                                           
+Epoch 74, global step 25926: 'val_loss' was not in top 1
+Epoch 74, global step 26100: 'val_loss' reached 30.76701 (best 30.76701), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 75: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=37.80, val_loss_step=26.00, val_loss_epoch=30.80, train_loss_epoch=39.20, epoch_time=351.0]
+Epoch 75 took 348.70 seconds.                                           
+Epoch 75, global step 26274: 'val_loss' was not in top 1
+Epoch 75, global step 26448: 'val_loss' reached 30.75173 (best 30.75173), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 76: 100%|██████████| 348/348 [05:47<00:00,  1.00it/s, v_num=ifg2, train_loss_step=39.80, val_loss_step=26.10, val_loss_epoch=30.80, train_loss_epoch=39.20, epoch_time=349.0]
+Epoch 76 took 347.01 seconds.                                           
+Epoch 76, global step 26622: 'val_loss' reached 30.75041 (best 30.75041), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 76, global step 26796: 'val_loss' was not in top 1
+Epoch 77: 100%|██████████| 348/348 [05:49<00:00,  0.99it/s, v_num=ifg2, train_loss_step=39.60, val_loss_step=26.20, val_loss_epoch=30.70, train_loss_epoch=39.20, epoch_time=347.0]
+Epoch 77 took 349.82 seconds.                                           
+Epoch 77, global step 26970: 'val_loss' reached 30.72987 (best 30.72987), saving model to '/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/weights/checkpoints/introns_cl/ResNet1D/199/best-checkpoint.ckpt' as top 1
+Epoch 77, global step 27144: 'val_loss' was not in top 1
+Epoch 78: 100%|██████████| 348/348 [05:48<00:00,  1.00it/s, v_num=ifg2, train_loss_step=40.60, val_loss_step=25.80, val_loss_epoch=30.80, train_loss_epoch=39.10, epoch_time=350.0]
+Epoch 78 took 348.25 seconds.                                           
+Epoch 78, global step 27318: 'val_loss' was not in top 1
+Epoch 78, global step 27492: 'val_loss' was not in top 1
+Epoch 79:  80%|███████▉  | 277/348 [04:31<01:09,  1.02it/s, v_num=ifg2, train_loss_step=41.20, val_loss_step=26.10, val_loss_epoch=30.70, train_loss_epoch=39.10, epoch_time=348.0]
+                                                                        
+Epoch 79, global step 27666: 'val_loss' was not in top 1

@@ -1,0 +1,10 @@
+{"time":"2025-10-15T12:49:04.482860865-04:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-10-15T12:49:04.482905276-04:00","level":"INFO","msg":"created symlink","path":"/mnt/home/at3836/Contrastive_Learning/files/results/exprmnt_2025_10_15__12_47_49/files/wandb/wandb/run-20251015_124904-sipnifg2/logs/debug-core.log"}
+{"time":"2025-10-15T12:49:04.616309568-04:00","level":"INFO","msg":"created new stream","id":"sipnifg2"}
+{"time":"2025-10-15T12:49:04.616362495-04:00","level":"INFO","msg":"stream: started","id":"sipnifg2"}
+{"time":"2025-10-15T12:49:04.616528275-04:00","level":"INFO","msg":"writer: Do: started","stream_id":"sipnifg2"}
+{"time":"2025-10-15T12:49:04.616634134-04:00","level":"INFO","msg":"handler: started","stream_id":"sipnifg2"}
+{"time":"2025-10-15T12:49:04.616739004-04:00","level":"INFO","msg":"sender: started","stream_id":"sipnifg2"}
+{"time":"2025-10-15T12:49:05.144160634-04:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-10-15T13:15:20.612799744-04:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/at3836-columbia-university/INTRONS_CL/sipnifg2/file_stream"}
+{"time":"2025-10-15T15:16:51.538787746-04:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
