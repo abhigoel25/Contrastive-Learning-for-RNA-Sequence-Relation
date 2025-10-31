@@ -1,0 +1,47 @@
+seq_len: 201  # PSI regression uses sequences of 201 bp (adjust if needed)
+# train_file: "/mnt/home/at3836/Contrastive_Learning/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_intron_sequences_dict.pkl"
+# val_file: "/mnt/home/at3836/Contrastive_Learning/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_intron_sequences_dict.pkl"
+# test_file: "/mnt/home/at3836/Contrastive_Learning/data/final_data/ASCOT_finetuning/psi_variable_Retina___Eye_psi_intron_sequences_dict.pkl"
+# train_file: "/gpfs/commons/home/atalukder/Contrastive_Learning/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_intron_sequences_dict.pkl"
+# val_file: "/gpfs/commons/home/atalukder/Contrastive_Learning/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_intron_sequences_dict.pkl"
+# test_file: "/gpfs/commons/home/atalukder/Contrastive_Learning/data/final_data/ASCOT_finetuning/psi_variable_Retina___Eye_psiWmean_intron_sequences_dict.pkl"
+# train_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_intron_sequences_dict.pkl
+# val_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_intron_sequences_dict.pkl
+# test_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_variable_Retina___Eye_psiWmean_intron_sequences_dict.pkl
+train_files:
+  3p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_3primeintron_sequences_dict.pkl
+  5p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_5primeintron_sequences_dict.pkl
+  exon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_exon_sequences_dict.pkl
+  intronexon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_MERGED.pkl
+val_files:
+  3p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_3primeintron_sequences_dict.pkl
+  5p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_5primeintron_sequences_dict.pkl
+  exon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_exon_sequences_dict.pkl
+  intronexon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_MERGED.pkl
+# test_files:
+#   3p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_test_Retina___Eye_psi_3primeintron_sequences_dict.pkl
+#   5p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_test_Retina___Eye_psi_5primeintron_sequences_dict.pkl
+#   exon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_test_Retina___Eye_psi_exon_sequences_dict.pkl
+#   intronexon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_test_Retina___Eye_psi_MERGED.pkl
+# train_files:
+#   3p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_3primeintron_sequences_dict.pkl
+#   5p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_intron_sequences_dict.pkl
+#   exon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_exon_sequences_dict.pkl
+#   intronexon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_train_Retina___Eye_psi_MERGED.pkl
+# val_files:
+#   3p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_3primeintron_sequences_dict.pkl
+#   5p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_intron_sequences_dict.pkl
+#   exon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_exon_sequences_dict.pkl
+#   intronexon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_val_Retina___Eye_psi_MERGED.pkl
+test_files:
+  3p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_variable_Retina___Eye_psi_3primeintron_sequences_dict.pkl
+  5p: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_variable_Retina___Eye_psiWmean_intron_sequences_dict.pkl
+  exon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_variable_Retina___Eye_psi_exon_sequences_dict.pkl
+  intronexon: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/psi_variable_Retina___Eye_psi_MERGED.pkl
+batch_size_per_device: ${div_up:${task.global_batch_size}, ${eval:${trainer.devices} * ${trainer.num_nodes}}}
+num_workers: ${optimal_workers:}  # Increase for faster data loading
+# train_ratio: 0.8
+# val_ratio: 0.1
+# test_ratio: 0.1
+# data_file: "/gpfs/commons/home/atalukder/Contrastive_Learning/data/fine_tuning/Psi_values/psi_Lung_intron_sequences_dict.pkl"  # New PSI dataset
+cache_dir: "../data"

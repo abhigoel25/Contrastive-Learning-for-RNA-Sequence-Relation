@@ -1,0 +1,40 @@
+defaults:
+  - _self_
+  - embedder: mtsplice
+  - dataset: introns
+  - task: introns_cl
+  - trainer: default_trainer
+  - callbacks: default_callbacks
+  - tokenizer: onehot_tokenizer
+  - loss: weighted_supcon
+  - model: simclr
+  - optimizer: adamw
+
+hydra:
+  run:
+    dir: ./hydra/${now:%Y-%m-%d_%H-%M-%S}
+    # dir: /gpfs/commons/home/atalukder/Contrastive_Learning/files/results/exprmnt_2025_03_15__23_17_28/files/hydra/${now:%Y-%m-%d_%H-%M-%S}
+
+  job:
+    chdir: false
+
+wandb:
+  api_key: "6c6c3f0e63c48c1d9b78f03948c5eb5a4f828a66"
+  dir: ./wandb/
+  #api_key: ${oc.env:WANDB_API_KEY,""}  # Load API key from environment variable (secure)
+
+
+logger:
+  _target_: lightning.pytorch.loggers.WandbLogger
+  name: ${embedder._name_}-${dataset.seq_len}-brkpnt
+  id: ${task._name_}-${.name}
+  project: INTRONS_CL
+  group: ${task._name_}
+  save_dir: ${wandb.dir}  
+  log_model: true
+  notes: ""
+  settings:
+    init_timeout: 600
+  
+  # mode: offline  # <-- Add this line
+  

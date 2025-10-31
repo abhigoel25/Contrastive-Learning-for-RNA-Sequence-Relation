@@ -1,0 +1,4 @@
+_target_: transformers.AutoTokenizer.from_pretrained
+pretrained_model_name_or_path: ${embedder.name_or_path}
+model_max_length: 201
+padding: "longest"

@@ -1,0 +1,22 @@
+name_or_path: psi_regression
+mode: "mtsplice"  # or "3p", "5p", "intronOnly", "intronexon", "mtsplice"
+# mode: "3p"  # or "3p", "5p"
+weights_fiveprime: "exprmnt_2025_06_01__21_15_08"
+weights_threeprime: "exprmnt_2025_06_01__21_16_19"
+weights_exon: "exprmnt_2025_06_08__21_34_21"
+# 3p_weights: "exprmnt_2025_07_08__20_39_38"
+# 3p_weights: "exprmnt_2025_07_08__20_19_40"
+# 3p_weights: "exprmnt_2025_07_06__23_42_07"
+# 5p_weights: "exprmnt_2025_06_01__21_15_08"
+# weights_3p: "exprmnt_2025_07_19__21_32_18"
+# 5p_weights: "exprmnt_2025_06_08__20_39_37"
+# 3p_weights: "exprmnt_2025_06_08__20_38_28"
+# # 5p_weights: "exprmnt_2025_05_04__11_29_05"
+mtsplice_weights: "exprmnt_2025_07_30__13_10_26"
+mtsplice_BCE: 1 # if instead of regression, you would like the auxiliary model to predict the PSI value using BCE loss like mtsplice make the val 1 or 0
+hidden_dim: 512
+output_dim: 1  # Single output for PSI value prediction
+freeze_encoder: False  # Set to false for fine-tuning
+warm_start: True
+train_mode: "train" # or eval
+eval_weights: ""

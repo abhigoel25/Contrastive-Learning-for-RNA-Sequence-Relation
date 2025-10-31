@@ -1,0 +1,15 @@
+model_checkpoint:
+  _target_: lightning.pytorch.callbacks.ModelCheckpoint
+  # dirpath: checkpoints/${task._name_}/${embedder._name_}/${dataset.seq_len}
+  # filename: best-checkpoint
+  dirpath: checkpoints/
+  filename: ${task._name_}/${embedder._name_}/${dataset.seq_len}/best-checkpoint
+  save_top_k: 1
+  save_last: True
+  verbose: true
+  monitor: val_loss
+  mode: min
+
+learning_rate_monitor:
+  _target_: lightning.pytorch.callbacks.LearningRateMonitor
+  logging_interval: step

@@ -1,0 +1,3 @@
+_target_: src.tokenizers.onehot_tokenizer.FastOneHotPreprocessor
+seq_len: 400
+padding: right  # or left

@@ -1,0 +1,21 @@
+seq_len: 199  
+# train_data_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/ASCOT_data/train_ASCOT_merged_filtered_min30Views.pkl
+# val_data_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/ASCOT_data/val_ASCOT_merged_filtered_min30Views.pkl
+# test_data_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/ASCOT_data/test_ASCOT_merged_filtered_min30Views.pkl
+train_data_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/train_merged_filtered_min30Views.pkl
+val_data_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/val_merged_filtered_min30Views.pkl
+test_data_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/test_merged_filtered_min30Views.pkl
+# train_data_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/train_5primeIntron_filtered.pkl
+# val_data_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/val_5primeIntron_filtered.pkl
+# test_data_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data/test_5primeIntron_filtered.pkl
+# data_file: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronSeq_multizAlignment_noDash/merged_intron_sequences.pkl
+# exon_names_path: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronSeq_multizAlignment_noDash/all_exon_names.txt
+batch_size_per_device: ${div_up:${task.global_batch_size}, ${eval:${trainer.devices}  * ${trainer.num_nodes}}} 
+# num_workers: 1          # Number of workers for data loading
+num_workers: ${optimal_workers:}
+train_ratio: 0.8       # Train split ratio
+val_ratio:  0.1
+test_ratio: null      # Evaluation split ratio
+cache_dir: "../data"         # Cache directory for the dataset
+n_augmentations: 2  # how many augmentations (homologs) you would like to choose; # or 3, or 'all' (quotes needed for string)
+fixed_species: false # if want to choose fixed species as positive pairs across batch, not randomly sampled

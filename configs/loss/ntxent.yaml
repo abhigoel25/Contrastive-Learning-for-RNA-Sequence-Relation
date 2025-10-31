@@ -1,0 +1,2 @@
+_target_: lightly.loss.NTXentLoss
+temperature: 0.5  # Initial learning rate

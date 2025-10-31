@@ -1,0 +1,2 @@
+_target_: lightly.loss.DCLLoss
+temperature: 0.5  # Initial learning rate

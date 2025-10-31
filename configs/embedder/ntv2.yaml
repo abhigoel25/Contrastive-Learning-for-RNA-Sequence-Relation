@@ -1,0 +1,6 @@
+name_or_path: InstaDeepAI/nucleotide-transformer-v2-50m-multi-species
+bp_per_token: 6
+seq_len: 200
+rcps: False
+_name_: NTv2
+

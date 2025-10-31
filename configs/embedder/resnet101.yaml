@@ -1,0 +1,9 @@
+bp_per_token: 1
+embedding_dim: 768
+vocab_size: 11
+seq_len: 200
+rcps: False
+maxpooling: true
+size: 50
+_name_: ResNet1D101
+name_or_path: ResNet1D101

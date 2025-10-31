@@ -1,0 +1,3 @@
+_target_: src.loss.multitissue_MSE.multitissue_MSE
+csv_dir: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/ASCOT_finetuning/
+

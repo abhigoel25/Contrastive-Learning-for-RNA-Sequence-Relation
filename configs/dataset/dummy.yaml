@@ -1,0 +1,8 @@
+seq_len: 199     
+num_pairs: 100       # Sequence length 
+train_batch_size: 8    # Training batch size
+test_batch_size: 8     # Testing batch size
+num_workers: 4          # Number of workers for data loading
+train_ratio: 1.0        # Train split ratio
+eval_ratio: 1.0         # Evaluation split ratio
+cache_dir: "../data"         # Cache directory for the dataset

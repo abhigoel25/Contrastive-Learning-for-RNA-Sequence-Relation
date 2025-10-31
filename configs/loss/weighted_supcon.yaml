@@ -1,0 +1,4 @@
+_target_: src.loss.weighted_supcon.weightedSupConLoss
+temperature: 0.5
+correlation_dir: ${oc.env:CONTRASTIVE_ROOT}/data/final_data/intronExonSeq_multizAlignment_noDash/trainTestVal_data
+

@@ -1,0 +1,8 @@
+name_or_path: InterpretableEncoder1D
+seq_len: 200
+motif_dim: 256
+motif_width: 12
+pooling_window: 10
+bp_per_token: 1
+maxpooling: true
+_name_: InterpretableEncoder1D

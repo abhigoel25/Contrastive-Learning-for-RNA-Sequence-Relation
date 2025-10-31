@@ -1,0 +1,6 @@
+_name_: psi_regression
+metrics:
+  - r2_score  # R² score for regression evaluation
+val_check_interval: 0.5  # Adjusted validation frequency
+global_batch_size: 16  # Increased batch size for better memory utilization
+pretraining_weights: ""

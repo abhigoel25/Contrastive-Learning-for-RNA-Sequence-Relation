@@ -1,0 +1,8 @@
+_name_: TISFM
+name_or_path: TISFM  # This can be used by your factory function to pick the correct encoder
+seq_len: 200         # Input sequence length
+motif_path: ${oc.env:CONTRASTIVE_ROOT}/data/motifs/cisBP_mouse.meme  # Path to MEME-formatted motif file (DUMMY)
+maxpooling: true
+stride: 1            # Stride for convolution
+pad_motif: 4         # Padding motifs to match original template_model setup
+num_of_response: 1   # You can change this depending on regression head targets

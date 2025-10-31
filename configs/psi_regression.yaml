@@ -1,0 +1,35 @@
+defaults:
+  - _self_
+  - embedder: mtsplice
+  - dataset: psi_dataset  # Custom dataset for PSI regression
+  - task: psi_regression_task
+  - trainer: default_trainer
+  - callbacks: default_callbacks
+  - tokenizer: onehot_tokenizer
+  - loss: MTSpliceBCELoss # multitissue_MSE  # Custom loss for PSI regression
+  - model: simclr
+  - aux_models: psi_regression_model 
+  - optimizer: sgd
+
+hydra:
+  run:
+    dir: ./hydra/psi_regression_${now:%Y-%m-%d_%H-%M-%S}
+
+  job:
+    chdir: false
+
+wandb:
+  api_key: "6c6c3f0e63c48c1d9b78f03948c5eb5a4f828a66"
+  dir: ./wandb/
+  
+logger:
+  _target_: lightning.pytorch.loggers.WandbLogger
+  name: PSI_${embedder._name_}-${dataset.seq_len}
+  id: ${task._name_}-${.name}
+  project: PSI_REGRESSION
+  group: ${task._name_}
+  notes: ""
+  save_dir: ${wandb.dir}  
+  log_model: true
+  settings:
+    init_timeout: 600
